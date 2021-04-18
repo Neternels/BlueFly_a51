@@ -530,8 +530,6 @@ static int __init fscrypt_init(void)
 #endif
 
 	return 0;
-fail_free_info:
-	kmem_cache_destroy(fscrypt_info_cachep);
 
 fail_free_ctx:
 	kmem_cache_destroy(fscrypt_ctx_cachep);
